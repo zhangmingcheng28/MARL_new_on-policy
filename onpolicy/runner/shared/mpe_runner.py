@@ -77,6 +77,8 @@ class MPERunner(Runner):
             # eval
             if episode % self.eval_interval == 0 and self.use_eval:
                 self.eval(total_num_steps)
+            # render
+            # self.render()
 
     def warmup(self):
         # reset env

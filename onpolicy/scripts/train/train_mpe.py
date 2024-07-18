@@ -64,7 +64,7 @@ def parse_args(args, parser):
 def main(args):
     parser = get_config()
     all_args = parse_args(args, parser)
-
+    # all_args.model_dir = r"F:\githubClone\MARL_new_on-policy\onpolicy\scripts\results\mpe\simple_spread\mappo\check\wandb\first_5000_eps\run-20240711_085112-4kl9wgoc\files"
     if all_args.algorithm_name == "rmappo":
         print("u are choosing to use rmappo, we set use_recurrent_policy to be True")
         all_args.use_recurrent_policy = True
